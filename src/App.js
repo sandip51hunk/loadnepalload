@@ -18,7 +18,7 @@ class App extends React.Component {
         </div>
         <div className="content">
           <div className="title-holder">
-            <h1>Website Loading Soon...</h1>
+            <h1>Website Loading </h1>
             <p>Meanwhile,Shoot us an email if you're curious.</p>
           </div>
           <a href="mailto:loadnepal01@gmail.com">
