@@ -7,7 +7,8 @@
   background: linear-gradient(180deg, #fff 0%, #fff 100%);
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
+  align-content:center ;
 }
 
 @media screen and (max-width: 512px) {
@@ -16,17 +17,26 @@
     height: 100%;
     border-radius: 0;
     box-shadow: none;
+    align-items: center;
   }
 }
 
 .header {
-  max-width: 100%;
-  max-height: 100%;
+  position:absolute;
+  top:3%;
+  right:1%;
 }
 
 
-.logo:hover {
-  opacity: 0.75;
+.logo {
+  padding-top: 5%;
+  padding-left: 40%;
+  padding-bottom: 0;
+  height:40%;
+  width: 80%;
+  display: flex;
+ 
+  
 }
 
 .social {
@@ -51,35 +61,38 @@
 }
 
 .social .icon {
-  width: 50px;
-  fill: #000000;
+  width: 60px;
+  fill: #0000FF;
 }
 
 .content {
   flex: 1 1 auto;
-  min-height: 500px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  
+  padding-top: 5%;
 }
 
 .content .title-holder {
   color: #000000;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-top: 0px;
 }
 
 .content .title-holder h1 {
   font-weight: bold;
   font-size: 100px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
 .content .title-holder p {
   font-size: 20px;
-  line-height: 28px;
-  font-weight: 500;
+  line-height: 2px;
+  font-weight: 200;
   color:rgb(0, 0, 0);
 }
 
@@ -89,18 +102,25 @@
   }
 }
 
+
+
 .content .cta {
-  min-width: 100px;
-  padding: 16px 24px;
+  min-width: 0px;
   background: #fff;
-  border-radius: 50px;
-  cursor: pointer;
+  border-radius: 5px;
+  cursor:context-menu;
   text-align: center;
-  font-size: 1em;
+  font-size: 2em;
   font-weight: bold;
   transform: none;
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s cubic-bezier(0.25, 0.25, 0.315, 1.35), transform 0.1s linear;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.25, 0.315, 0.35), transform 0.1s linear;
+  position:static;
+  width:fit-content;
+  margin-left: 1100px;
+  
+
+
 }
 
 .content .cta:hover {
@@ -115,9 +135,10 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  height:6%;
+  height:5%;
   width: 100%;
   text-align: center;
+  padding-top: 1%;
 }
 
 a.underlined:hover {
